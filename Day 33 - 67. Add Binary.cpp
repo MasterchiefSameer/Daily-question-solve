@@ -74,6 +74,14 @@ public:
 
 
 // 2nd Method: formal way with carry and sum calculation
+
+/*
+Iteration	Digit A	Digit B	Carry (In)	Total (A+B+C)	char c (Total % 2)	New Carry (Total / 2)	res (String)
+Step 1	0	1	0	1	'1' (1%2)	0 (1/2)	"1"
+Step 2	1	1	0	2	'0' (2%2)	1 (2/2)	"10"
+Step 3	0	0	1	1	'1' (1%2)	0 (1/2)	"101"
+Step 4	1	1	0	2	'0' (2%2)	1 (2/2)	"1010"
+*/
 class Solution {
 public:
     string addBinary(string a, string b) {
